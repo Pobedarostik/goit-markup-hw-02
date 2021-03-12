@@ -1,27 +1,38 @@
 :root {
-  --maim-text-color: #212121;
+  --main-text-color: #212121;
+  --two-main-color: #ffffff;
+  --title-color: #757575;
+  --button-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --bg-color: #2f303a;
 }
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+
 a {
   text-decoration: none;
   color: inherit;
-}
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--maim-text-color);
 }
 
 .web,
 .studio {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .studio {
   color: #000000;
+}
+.studio-footer {
+  color: var(--two-main-color);
 }
 
 .list {
@@ -32,23 +43,26 @@ a:hover,
 :focus,
 button:hover,
 :focus {
-  color: #2196f3;
+  color: var(--accent-color);
   cursor: pointer;
 }
+
 .nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
+
 .contact {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--title-color);
 }
 
-.heading {
+.hidden-title {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -59,32 +73,62 @@ button:hover,
   overflow: hidden;
 }
 
-.button {
+.cap {
+  background: var(--bg-color);
+}
+.h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--two-main-color);
+}
+.cap button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--two-main-color);
+  background: var(--accent-color);
+}
+
+.features h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.header-two-level {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.team h4 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-p {
+.team p {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-color);
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--bg-color);
 }
 
 .address {
@@ -92,5 +136,32 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--two-main-color);
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--button-color);
+}
+.button:hover,
+:focus {
+  color: var(--two-main-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.portfolio p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
