@@ -40,9 +40,9 @@ a {
 }
 
 a:hover,
-:focus,
+a:focus,
 button:hover,
-:focus {
+button:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -147,7 +147,7 @@ button:hover,
   background-color: var(--button-color);
 }
 .button:hover,
-:focus {
+.button:focus {
   color: var(--two-main-color);
   background-color: var(--accent-color);
 }
